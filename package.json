@@ -1,0 +1,22 @@
+{
+  "name": "projettissu_front",
+  "version": "1.0.0",
+  "description": "front",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jihad-d/ProjetTissu_front.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jihad-d/ProjetTissu_front/issues"
+  },
+  "homepage": "https://github.com/jihad-d/ProjetTissu_front#readme",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
