@@ -3,19 +3,21 @@ import axios from 'axios'
 import { useParams } from 'react-router-dom';
 
 function RecupDataForm() {
-    const InscriptionPro = () =>{
-        const [nom, setNom] = useState("");
-        const [prenom, setPrenom] = useState("");
-        const [email, setEmail] = useState("");
-        const [tel, setTel] = useState("");
-        const [societe, setSociete] = useState("");
-        const [siretTva, setSiretTva] = useState("");
-        const [adresse, setAdresse] = useState("");
-        const [url, setUrl] = useState("");
-    };
 
+    const [loading, setLoading] = useState(true);
+    const [error, setError] = useState("");
+    const [nom, setNom] = useState("");
+    const [prenom, setPrenom] = useState("");
+    const [email, setEmail] = useState("");
+    const [tel, setTel] = useState("");
+    const [societe, setSociete] = useState("");
+    const [siretTva, setSiretTva] = useState("");
+    const [adresse, setAdresse] = useState("");
+    const [url, setUrl] = useState("");
+  
     const params = useParams();
     
+
     // récupérer les données entrées par l'utilisateur pro lors de l'inscription
     useEffect(()=>{
         axios.get(`/recupdataform/${params.id}`)
@@ -42,32 +44,32 @@ function RecupDataForm() {
     <div>
             <h3>Mes informations</h3><br/>
 
-                <form action={`http://localhost:5000/modifier/${UtilisateurProId}?_method=PUT`} method="post">
+                <form action={`http://localhost:5000/modifier/${params.id}?_method=PUT`} method="post">
                     <input type="hidden" name="_method" value="PUT"/>
 
                     <label for="">Nom</label><br/>
-                    <input type="text" name="nom" defaultValue={UtilisateurPro.nom}/><br/>
+                    <input type="text" name="nom" defaultValue={RecupDataForm.nom}/><br/>
 
                     <label for="">Prenom</label><br/>
-                    <input type="text" name="prenom" defaultValue={UtilisateurPro.prenom}/><br/>
+                    <input type="text" name="prenom" defaultValue={RecupDataForm.prenom}/><br/>
 
                     <label for="">Email</label><br/>
-                    <input type="email" name="email" defaultValue={UtilisateurPro.email} required/><br/>
+                    <input type="email" name="email" defaultValue={RecupDataForm.email} required/><br/>
 
                     <label for="">Téléphone</label><br/>
-                    <input type="number" name="tel" defaultValue={UtilisateurPro.tel} maxlength="10"/><br/>
+                    <input type="number" name="tel" defaultValue={RecupDataForm.tel} maxlength="10"/><br/>
 
                     <label for="">Société</label><br/>
-                    <input type="text" name="societe" defaultValue={UtilisateurPro.societe} required/><br/>
+                    <input type="text" name="societe" defaultValue={RecupDataForm.societe} required/><br/>
 
                     <label for="">SIRET ou TVA</label><br/>
-                    <input type="number" name="siretTva" defaultValue={UtilisateurPro.siretTva} maxlength="14" required/><br/>
+                    <input type="number" name="siretTva" defaultValue={RecupDataForm.siretTva} maxlength="14" required/><br/>
 
                     <label for="">Adresse</label><br/>
-                    <input type="text" name="adresse" defaultValue={UtilisateurPro.adresse}/><br/>
+                    <input type="text" name="adresse" defaultValue={RecupDataForm.adresse}/><br/>
 
                     <label for="">URL</label><br/>
-                    <input type="text" name="url" defaultValue={UtilisateurPro.url}/><br/>
+                    <input type="text" name="url" defaultValue={RecupDataForm.url}/><br/>
 
                     <label for="">Mot de passe</label><br/>
                     <input type="password" name="password"/><br/>
