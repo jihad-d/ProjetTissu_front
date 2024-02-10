@@ -5,7 +5,7 @@ function InscriptionPar (){
         <div>
             <h1>Inscription Particulier</h1>
 
-            <form action="/api/inscription" method="post">
+            <form action="http://localhost:5000/api/inscription" method="post">
                 <label for="">Nom</label>
                 <input type="text" name="nom"/>
                 <br/>

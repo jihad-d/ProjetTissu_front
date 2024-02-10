@@ -4,8 +4,11 @@ function Connexion(){
     return(
         <div>
             <h1>Connexion</h1>
+            <br/>
+            <br/>
 
-            <form action="/connexion" method="post">
+
+            <form action="http://localhost:5000/connexion" method="post">
                 <label for="">Email</label>
                 <input type="email" name="email" required/>
                 <br/>

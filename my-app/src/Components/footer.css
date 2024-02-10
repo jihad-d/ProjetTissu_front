@@ -1,0 +1,44 @@
+.footer {
+    background-color: #230007;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    position: fixed; /* Position fixe */
+    bottom: 0; /* Collé en bas de la fenêtre */
+    width: 100%; /* Occupant toute la largeur de l'écran */
+}
+
+.footer-left {
+    display: flex;
+    align-items: center;
+}
+
+.footer-left a {
+    color: white;
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.footer-right a {
+    margin-left: 20px;
+}
+
+/* .footer-content {
+    text-align: center; /* Centrer le contenu */
+    /*margin-top: 40px;
+} */
+
+.footer-right img {
+    width: 30px;
+    height: auto;
+}
+
+.copyright {
+    text-align: center;
+}

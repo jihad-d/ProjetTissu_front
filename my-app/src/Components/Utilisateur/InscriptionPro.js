@@ -5,7 +5,7 @@ function InscriptionPro(){
         <div>
             <h1>Inscription Professionnel</h1>
 
-            <form action="/api/inscriptionpro" method="post">
+            <form action="http://localhost:5000/api/inscriptionpro" method="post">
                 <label for="">Nom</label>
                 <input type="text" name="nom"/>
                 <br/>
