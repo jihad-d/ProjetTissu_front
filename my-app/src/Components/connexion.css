@@ -1,0 +1,48 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #865959; /* Couleur de fond */
+  } 
+  
+  .login-form {
+    background-color: #000; /* Couleur du formulaire */
+    padding: 20px;
+    border-radius: 10px; /* Bords arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre */
+  }
+  
+  .login-form h1 {
+    text-align: center; /* Centrer le titre */
+  }
+  
+  .login-form label, .login-form input, .login-form a {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .login-form input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Couleur du bouton de soumission */
+    color: #fff; /* Couleur du texte du bouton de soumission */
+    cursor: pointer;
+  }
+  
+  .login-form input[type="submit"]:hover {
+    background-color: #0056b3; /* Couleur du bouton de soumission au survol */
+  }
+  
+  .login-form a {
+    text-align: center; /* Centrer le lien */
+    color: #fff; /* Couleur du texte du lien */
+    text-decoration: none;
+  }
+  
+  .login-form a:hover {
+    text-decoration: underline; /* Souligner le lien au survol */
+  }
+  

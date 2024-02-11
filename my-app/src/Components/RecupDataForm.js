@@ -22,6 +22,7 @@ function RecupDataForm() {
     useEffect(()=>{
         axios.get(`/recupdataform/${params.id}`)
         .then(response =>{
+            const { data } = response;
             setLoading(false)
             console.log(response.data);
             setNom(response.data.nom)
@@ -42,34 +43,37 @@ function RecupDataForm() {
 
   return (
     <div>
+      <br/>
+      <br/>
+      <br/>
             <h3>Mes informations</h3><br/>
 
-                <form action={`http://localhost:5000/modifier/${params.id}?_method=PUT`} method="post">
+                <form action={`http://localhost:5000/recupdataform/${params.id}?_method=PUT`} method="post">
                     <input type="hidden" name="_method" value="PUT"/>
 
                     <label for="">Nom</label><br/>
-                    <input type="text" name="nom" defaultValue={RecupDataForm.nom}/><br/>
+                    <input type="text" name="nom" defaultValue={nom}/><br/>
 
                     <label for="">Prenom</label><br/>
-                    <input type="text" name="prenom" defaultValue={RecupDataForm.prenom}/><br/>
+                    <input type="text" name="prenom" defaultValue={prenom}/><br/>
 
                     <label for="">Email</label><br/>
-                    <input type="email" name="email" defaultValue={RecupDataForm.email} required/><br/>
+                    <input type="email" name="email" defaultValue={email} required/><br/>
 
                     <label for="">Téléphone</label><br/>
-                    <input type="number" name="tel" defaultValue={RecupDataForm.tel} maxlength="10"/><br/>
+                    <input type="number" name="tel" defaultValue={tel} maxlength="10"/><br/>
 
                     <label for="">Société</label><br/>
-                    <input type="text" name="societe" defaultValue={RecupDataForm.societe} required/><br/>
+                    <input type="text" name="societe" defaultValue={societe} required/><br/>
 
                     <label for="">SIRET ou TVA</label><br/>
-                    <input type="number" name="siretTva" defaultValue={RecupDataForm.siretTva} maxlength="14" required/><br/>
+                    <input type="number" name="siretTva" defaultValue={siretTva} maxlength="14" required/><br/>
 
                     <label for="">Adresse</label><br/>
-                    <input type="text" name="adresse" defaultValue={RecupDataForm.adresse}/><br/>
+                    <input type="text" name="adresse" defaultValue={adresse}/><br/>
 
                     <label for="">URL</label><br/>
-                    <input type="text" name="url" defaultValue={RecupDataForm.url}/><br/>
+                    <input type="text" name="url" defaultValue={url}/><br/>
 
                     <label for="">Mot de passe</label><br/>
                     <input type="password" name="password"/><br/>

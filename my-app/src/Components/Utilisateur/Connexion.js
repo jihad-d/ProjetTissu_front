@@ -1,14 +1,14 @@
 import React from 'react'
+// import './connexion.css'
 
 function Connexion(){
     return(
-        <div>
+        <div className='container'>
+            <form className="login-form"action="http://localhost:5000/connexion" method="post">
             <h1>Connexion</h1>
             <br/>
             <br/>
-
-
-            <form action="http://localhost:5000/connexion" method="post">
+            <br/>
                 <label for="">Email</label>
                 <input type="email" name="email" required/>
                 <br/>
