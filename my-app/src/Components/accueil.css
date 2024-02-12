@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.titre{
+    padding: 5% 10%;
+    color: #230007;
+}
+
+.hero{
+    background-image: url("/images/hero_accueil_tissu.jpg");
+    height: 630px;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.inscriptionbtn{
+    text-align: center;
+    background-color:#230007 ;
+    padding: 1%;
+    /*height: 50px;*/
+}
+
+.inscriptionbtn a{
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+    /*line-height: 50px;*/
+}

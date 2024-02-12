@@ -1,0 +1,55 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E6DAD1; 
+    overflow-y: auto;
+    max-height: 200vh;
+  } 
+  
+  .inscription{
+    background-color: #230007; 
+    padding: 20px;
+    width: 50%;
+    height: 900px;
+    border-radius: 10px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  }
+
+  .inscription h1 {
+    text-align: center; 
+    color: white;
+  }
+
+  .inscription label, .inscription input{
+    display: block;
+    color: white;
+    width: 100%;
+    height: 30px;
+  }
+
+  .inscription input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #57383B; 
+    color: #fff; 
+    cursor: pointer;
+    height: 35px;
+    margin-top: 20px;
+    font-size: 15px;
+  }
+
+  .inscription input[type="submit"]:hover {
+    color: #57383B; 
+    background-color: #fff; 
+  }
+  
+  .inscription input[type="submit"]:hover {
+    background-color: #E6DAD1;
+  }
+
+  .inscription span{
+    color: red;
+  }

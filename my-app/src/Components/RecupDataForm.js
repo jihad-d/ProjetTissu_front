@@ -53,36 +53,38 @@ function RecupDataForm() {
 
                     <label for="">Nom</label><br/>
                     <input type="text" name="nom" defaultValue={nom}/><br/>
-
+                    <br/>
                     <label for="">Prenom</label><br/>
                     <input type="text" name="prenom" defaultValue={prenom}/><br/>
-
+                    <br/>
                     <label for="">Email</label><br/>
                     <input type="email" name="email" defaultValue={email} required/><br/>
-
+                    <br/>
                     <label for="">Téléphone</label><br/>
                     <input type="number" name="tel" defaultValue={tel} maxlength="10"/><br/>
-
+                    <br/>
                     <label for="">Société</label><br/>
                     <input type="text" name="societe" defaultValue={societe} required/><br/>
-
+                    <br/>
                     <label for="">SIRET ou TVA</label><br/>
                     <input type="number" name="siretTva" defaultValue={siretTva} maxlength="14" required/><br/>
-
+                    <br/>
                     <label for="">Adresse</label><br/>
                     <input type="text" name="adresse" defaultValue={adresse}/><br/>
-
+                    <br/>
                     <label for="">URL</label><br/>
                     <input type="text" name="url" defaultValue={url}/><br/>
-
+                    <br/>
                     <label for="">Mot de passe</label><br/>
                     <input type="password" name="password"/><br/>
                     <br/>
 
                     <input type="submit" value="Modifier"/>
                 </form>
+                <br/>
 
                 <a href="/deconnexion/<%=data._id%>"><input type="submit" value="Déconnexion"/></a><br/>
+                <br/>
                 <a href="/supprimer/<%=data._id%>?_method=DELETE"><input type="submit" value="Supression du compte"/></a><br/>
         </div>
   )

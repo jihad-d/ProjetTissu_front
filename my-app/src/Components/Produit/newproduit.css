@@ -1,0 +1,67 @@
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #E6DAD1; /* Couleur de fond */
+  } 
+  
+  .ajtprod h1{
+    color: white;
+    text-align: center;
+  }
+
+  .ajtprod {
+    background-color: #230007; /* Couleur du formulaire */
+    padding: 20px;
+    width: 30%;
+    border-radius: 10px; /* Bords arrondis */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre */
+  }
+  
+  .login-form h1 {
+    text-align: center; /* Centrer le titre */
+    color: white;
+  }
+  
+  .ajtprod label, .ajtprod input {
+    display: block;
+    margin-bottom: 10px;
+    color: white;
+    width: 100%;
+    height: 30px;
+  }
+
+  .ajtprod input{
+    color: black;
+  }
+  
+  .ajtprod input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #57383B; /* Couleur du bouton de soumission */
+    color: #fff; /* Couleur du texte du bouton de soumission */
+    cursor: pointer;
+    height: 35px;
+    margin-top: 20px;
+  }
+
+  .ajtprod input[type="submit"]:hover {
+    color: #57383B; /* Nouvelle couleur du texte au survol */
+    background-color: #fff; /* Nouvelle couleur de fond au survol */
+  }
+  
+  .ajtprod input[type="submit"]:hover {
+    background-color: #E6DAD1; /* Couleur du bouton de soumission au survol */
+  }
+  
+  .ajtprod a {
+    display: block; /* Le lien occupe une ligne entière */
+    text-align: center; /* Centrer le lien */
+    color: #230007; /* Couleur du texte du lien */
+    text-decoration: none;
+    margin-top: 50px; /* Espacement entre le formulaire et le lien */
+    
+  }
