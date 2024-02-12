@@ -1,0 +1,45 @@
+.hero-container {
+    position: relative;
+  }
+  
+  .hero-image {
+    width: 100%;
+    max-width: 100%; /* Ajustez la largeur maximale de l'image selon vos besoins */
+    display: block;
+  }
+  
+  .hero-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+  
+  .hero-buttons {
+    margin-top: 20px;
+  }
+  
+  .hero-buttons button {
+    margin: 0 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .hero-rectangle {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px; /* Hauteur du rectangle noir en bas de la page */
+    background-color: black;
+    text-align: center;
+    color: white;
+    line-height: 100px; /* Centrer verticalement le texte à l'intérieur du rectangle */
+  }
+  

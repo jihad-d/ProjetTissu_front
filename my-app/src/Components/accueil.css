@@ -9,7 +9,6 @@
 }
 
 .hero{
-    background-image: url("/images/hero_accueil_tissu.jpg");
     height: 630px;
     background-size: cover;
     display: flex;

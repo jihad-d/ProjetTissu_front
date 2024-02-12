@@ -5,12 +5,12 @@ function Nav() {
     return (
         <nav>
             <div class="wrapper">
-            <div class="logo"><a href="#">Tissu du monde</a></div>
+            <div class="logo"><a href="/hero">Tissu du monde</a></div>
                 <input type="radio" name="slider" id="menu-btn"/>
                     <input type="radio" name="slider" id="close-btn"/>
                         <ul class="nav-links">
                             <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-                            <li><a href="accueil">Accueil</a></li>
+                            <li><a href="/accueil">Accueil</a></li>
                             <li>
                                 <a href="/affichertissu" class="desktop-item">Tissu</a>
                                 <ul class="drop-menu">

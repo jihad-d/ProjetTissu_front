@@ -4,6 +4,7 @@ import InscriptionPar from './Components/Utilisateur/InscriptionPar';
 import InscriptionPro from './Components/Utilisateur/InscriptionPro';
 import Connexion from './Components/Utilisateur/Connexion';
 import Nav from './Components/Nav';
+import Hero from './Components/Hero';
 import NewProduit from './Components/Produit/NewProduit';
 import Footer from './Components/Footer';
 import AfficherTissu from './Components/Produit/AfficherTissu';
@@ -11,6 +12,7 @@ import Tissu from './Components/Produit/Tissu';
 // import Profil from './Components/Utilisateur/Profil';
 import RecupDataForm from './Components/RecupDataForm';
 import NotFound from './Components/NotFound/NotFound';
+import ModifTissu from './Components/Produit/ModifTissu';
 
 
 function App() {
@@ -21,17 +23,18 @@ function App() {
         <Routes>
 
         <Route path="/accueil" element={<Accueil />} />
+        <Route path="/hero" element={<Hero />} />
 
         {/* Tissu */}
-       
         <Route path="/newproduit" element={<NewProduit />} />
+        <Route path='/affichertissu' element={<AfficherTissu/>} />
+        <Route path="/affichertissu" element={<ModifTissu />} />
 
         {/* CRUD users */}
         <Route path='/inscriptionpro' element={<InscriptionPro />} />
         <Route path='/inscriptionpar' element={<InscriptionPar />} />
         <Route path='/connexion' element={<Connexion />} />
         {/* <Route path='/profil' element={<RecupDataForm />} /> */}
-        <Route path='/affichertissu' element={<AfficherTissu/>} />
         <Route path='/recupdataform/:id' element={<RecupDataForm />} />
         <Route path='/footer' element={<Footer />} />
         <Route path='/*' element={<NotFound />} />

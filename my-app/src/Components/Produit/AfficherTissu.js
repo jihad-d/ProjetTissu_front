@@ -39,14 +39,6 @@ function AfficherTissu() {
   }, []);
 
   return (
-    // <div>
-    //     <h1>{tissu.titre}</h1>
-    //     <p>Couleur : {tissu.couleur}</p>
-    //     <p>{tissu.description}</p>
-
-    //   <button>Modifier</button>
-    //   <button>Supprimer</button>
-    // </div>
 
     <div>
       {
@@ -56,10 +48,14 @@ function AfficherTissu() {
 
             <div key={index}>
               {/* {blog.imageName && <img src={`http://localhost:5000/tissu`} style={{ "width": "50%" }} />} */}
-
+              <br/>
+              <br/>
+              <br/>
               <h1>{tissu.titre}</h1>
               <p>Couleur : {tissu.couleur}</p>
               <p>{tissu.description}</p>
+
+              <a href="/modiftissu"><input type="submit" value="modifier"/></a>
             </div>
           )
         })
