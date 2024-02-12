@@ -7,19 +7,19 @@ function AfficherTissu() {
   const initialState = {
     loading: true,
     error: '',
-    tissus: {}
+    tissu: {}
   }
   const reducer = (state, action) => {
     switch (action.type) {
       case 'FETCH_SUCCESS': return {
         loading: false,
         error: '',
-        tissu: action.payload
+        tissus: action.payload
       }
       case 'FETCH_ERROR': return {
         loading: false,
         error: 'Something went wrong',
-        tissu: {}
+        tissus: {}
       }
       default: return state;
     }
@@ -30,6 +30,7 @@ function AfficherTissu() {
   useEffect(() => {
     axios.get("http://localhost:5000/affichertissu")
       .then(response => {
+        console.log(response.data);
         dispatch({ type: 'FETCH_SUCCESS', payload: response.data });
       })
       .catch(error => {

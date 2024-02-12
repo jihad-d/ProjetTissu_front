@@ -10,6 +10,7 @@ import AfficherTissu from './Components/Produit/AfficherTissu';
 import Tissu from './Components/Produit/Tissu';
 // import Profil from './Components/Utilisateur/Profil';
 import RecupDataForm from './Components/RecupDataForm';
+import NotFound from './Components/NotFound/NotFound';
 
 
 function App() {
@@ -22,7 +23,7 @@ function App() {
         <Route path="/accueil" element={<Accueil />} />
 
         {/* Tissu */}
-        <Route path="/tissu" element={<AfficherTissu />} />
+       
         <Route path="/newproduit" element={<NewProduit />} />
 
         {/* CRUD users */}
@@ -30,8 +31,10 @@ function App() {
         <Route path='/inscriptionpar' element={<InscriptionPar />} />
         <Route path='/connexion' element={<Connexion />} />
         {/* <Route path='/profil' element={<RecupDataForm />} /> */}
+        <Route path='/affichertissu' element={<AfficherTissu/>} />
         <Route path='/recupdataform/:id' element={<RecupDataForm />} />
         <Route path='/footer' element={<Footer />} />
+        <Route path='/*' element={<NotFound />} />
         
         </Routes>
         <Footer />

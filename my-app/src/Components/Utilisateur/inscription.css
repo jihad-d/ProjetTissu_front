@@ -3,8 +3,6 @@
     justify-content: center;
     align-items: center;
     background-color: #E6DAD1; 
-    overflow-y: auto;
-    max-height: 200vh;
   } 
   
   .inscription{
@@ -14,6 +12,7 @@
     height: 900px;
     border-radius: 10px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+    margin-top: 200px;
   }
 
   .inscription h1 {
