@@ -5,7 +5,7 @@ function Accueil() {
     return (
             <div>
                 <header>
-                    <div class="titre">
+                    <div className="titre">
                         <h1>Tissu du Monde</h1>
                     </div>
                 </header>

@@ -9,8 +9,8 @@ function Hero() {
             <div className="hero-content">
                 <h1>Tissu du Monde</h1>
                 <div className="hero-buttons">
-                    <a href="/inscriptionpro"><button>Inscription Professionnel</button></a>
-                    <a href="/inscriptionpar"><button>Inscription Particulier</button></a>
+                    <a href="/inscriptionpro"><button>Professionnel</button></a>
+                    <a href="/inscriptionpar"><button>Particulier</button></a>
                 </div>
             </div>
         </div>

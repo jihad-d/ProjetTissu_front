@@ -1,5 +1,7 @@
 import React, { useEffect, useReducer } from 'react'
 import axios from 'axios'
+import './affichertissu.css'
+import { Link } from 'react-router-dom'
 
 
 function AfficherTissu() {
@@ -40,22 +42,31 @@ function AfficherTissu() {
 
   return (
 
-    <div>
+    <div className='containertissu'>
+      <div>
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <h1 className='titre'>Tissu</h1>
+      </div>
       {
         state.loading ? 'Loading...' : state.tissus.map((tissu, index) => {
           return (
-
-
-            <div key={index}>
-              {/* {blog.imageName && <img src={`http://localhost:5000/tissu`} style={{ "width": "50%" }} />} */}
-              <br/>
-              <br/>
-              <br/>
+            <div className="card" key={index}>
+              {tissu.image && <img src={`http://localhost:5000/afficher/`} style={{ "width": "50%" }} />}
               <h1>{tissu.titre}</h1>
-              <p>Couleur : {tissu.couleur}</p>
-              <p>{tissu.description}</p>
-
-              <a href="/modiftissu"><input type="submit" value="modifier"/></a>
+              <br />
+              <p className='couleur'>Couleur : {tissu.couleur}</p>
+              <br />
+              <p className='descriptiontissu'>{tissu.description}</p>
+              <br />
+              <button>
+              <Link to="/modiftissu" state={{ tissu: tissu }}>
+                Modifier
+              </Link>
+              </button>
             </div>
           )
         })

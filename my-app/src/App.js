@@ -8,10 +8,11 @@ import Hero from './Components/Hero';
 import NewProduit from './Components/Produit/NewProduit';
 import Footer from './Components/Footer';
 import AfficherTissu from './Components/Produit/AfficherTissu';
-import Tissu from './Components/Produit/Tissu';
+// import Tissu from './Components/Produit/Tissu';
 // import Profil from './Components/Utilisateur/Profil';
 import RecupDataForm from './Components/RecupDataForm';
 import NotFound from './Components/NotFound/NotFound';
+import Apropos from './Components/Apropos';
 import ModifTissu from './Components/Produit/ModifTissu';
 
 
@@ -24,11 +25,13 @@ function App() {
 
         <Route path="/accueil" element={<Accueil />} />
         <Route path="/hero" element={<Hero />} />
+        <Route path="/apropos" element={<Apropos />} />
 
         {/* Tissu */}
         <Route path="/newproduit" element={<NewProduit />} />
         <Route path='/affichertissu' element={<AfficherTissu/>} />
-        <Route path="/affichertissu" element={<ModifTissu />} />
+        <Route path='/affichertissu' element={<ModifTissu/>} />
+        <Route path="/modiftissu" element={<ModifTissu />} />
 
         {/* CRUD users */}
         <Route path='/inscriptionpro' element={<InscriptionPro />} />

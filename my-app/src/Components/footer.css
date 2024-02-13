@@ -1,12 +1,13 @@
 .footer {
-    background-color: #3b302e;
+    background-color: #230007;
     color: white;
     padding: 20px;
     display: flex;
     justify-content: space-between;
     position: fixed; /* Position fixe */
     bottom: 0; /* Collé en bas de la fenêtre */
-    width: 100%; /* Occupant toute la largeur de l'écran */
+    width: 100%; /* Occupant toute la largeur de l'écran */ 
+    margin-top: 100px;
 }
 
 .footer-left {

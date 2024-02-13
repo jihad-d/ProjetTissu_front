@@ -1,16 +1,18 @@
-  .container {
+.containermodif {
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 100vh;
     background-color: #E6DAD1; /* Couleur de fond */
   } 
   
-  .ajtprod h1{
+  .modifprod h1{
     color: white;
+    
     text-align: center;
   }
 
-  .ajtprod {
+  .modifprod {
     background-color: #230007; /* Couleur du formulaire */
     padding: 20px;
     width: 30%;
@@ -23,7 +25,7 @@
     color: white;
   }
   
-  .ajtprod label, .ajtprod input {
+  .modifprod label, .modifprod input {
     display: block;
     margin-bottom: 10px;
     color: white;
@@ -31,11 +33,11 @@
     height: 30px;
   }
 
-  .ajtprod input{
+  .modifprod input{
     color: black;
   }
 
-  .ajtprod input[type="submit"] {
+  .modifprod input[type="submit"] {
     width: 100%;
     padding: 10px;
     border: none;
@@ -47,20 +49,32 @@
     margin-top: 20px;
   }
 
-  .ajtprod input[type="submit"]:hover {
+  .modifprod input[type="submit"]:hover {
     color: #57383B; /* Nouvelle couleur du texte au survol */
     background-color: #fff; /* Nouvelle couleur de fond au survol */
   }
   
-  .ajtprod input[type="submit"]:hover {
+  .modifprod input[type="submit"]:hover {
     background-color: #E6DAD1; /* Couleur du bouton de soumission au survol */
   }
   
-  .ajtprod a {
+  .modifprod a {
     display: block; /* Le lien occupe une ligne entière */
     text-align: center; /* Centrer le lien */
     color: #230007; /* Couleur du texte du lien */
     text-decoration: none;
     margin-top: 50px; /* Espacement entre le formulaire et le lien */
+  }
+
+  .containermodif .supprimertissu input[type="submit"]:hover {
+    color: #57383B; /* Nouvelle couleur du texte au survol */
+    background-color: #fff; /* Nouvelle couleur de fond au survol */
     
   }
+
+  .containermodif .supprimertissu input[type="submit"]:hover {
+    background-color: #ff3737; /* Couleur du bouton de soumission au survol */
+  
+  }
+
+  

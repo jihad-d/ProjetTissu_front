@@ -1,0 +1,27 @@
+.containertissu h1 .titre {
+    padding: 10% 20%;
+}
+
+.containertissu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 100px;
+}
+
+.containertissu .card {
+    flex: 0 0 calc(24% - 10px); /* Réduire la largeur des cartes */
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #000000;
+    margin-top: 200px;
+}
+
+/* .containertissu .card .btn{
+    color: black;
+} */
+
+
+
+
+

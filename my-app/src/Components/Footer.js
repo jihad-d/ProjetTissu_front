@@ -10,7 +10,7 @@ function Footer() {
             <div className="footer-left">
                 <a href="#">Accueil</a>
                 <a href="#">Contact</a>
-                <a href="#">À propos de nous</a>
+                <a href="/apropos">À propos de nous</a>
                 <a href="#">Termes et conditions</a>
             </div>
             <div className="footer-right">
