@@ -17,6 +17,11 @@
     margin-top: 200px;
 }
 
+
+.containertissu .card p {
+    color: black;
+}
+
 /* .containertissu .card .btn{
     color: black;
 } */
