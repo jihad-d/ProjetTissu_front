@@ -24,7 +24,7 @@ function App() {
         <Routes>
 
         <Route path="/accueil" element={<Accueil />} />
-        <Route path="/hero" element={<Hero />} />
+        <Route path="/" element={<Hero />} />
         <Route path="/apropos" element={<Apropos />} />
 
         {/* Tissu */}

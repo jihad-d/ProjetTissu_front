@@ -64,7 +64,7 @@ function AfficherTissu() {
               <br />
               <button> 
               <Link to="/modiftissu" state={{ tissu: tissu }}>
-                Modifier
+                <p className='btnmodif'>Modifier</p>
               </Link>
               </button>
             </div>

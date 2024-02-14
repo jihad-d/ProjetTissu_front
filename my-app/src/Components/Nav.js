@@ -5,7 +5,7 @@ function Nav() {
     return (
         <nav>
             <div className="wrapper">
-            <div className="logo"><a href="/hero">Tissu du monde</a></div>
+            <div className="logo"><a href="/">Tissu du monde</a></div>
                 <input type="radio" name="slider" id="menu-btn"/>
                     <input type="radio" name="slider" id="close-btn"/>
                         <ul className="nav-links">
@@ -22,7 +22,7 @@ function Nav() {
                                 </ul>
                             </li>
                             <li><a href="#">Contact</a></li>
-                            <li><a href="#">Panier</a></li>
+                            <li><a href="/connexion">Panier</a></li>
                             <li>
                                 <a href="#" className="desktop-item">Profil</a>
                                 <ul className="drop-menu">

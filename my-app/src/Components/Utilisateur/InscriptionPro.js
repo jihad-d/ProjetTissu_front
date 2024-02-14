@@ -1,6 +1,5 @@
 import React from 'react'
 import './inscription.css'
-
 function InscriptionPro(){
     return (
         <div className='container'>

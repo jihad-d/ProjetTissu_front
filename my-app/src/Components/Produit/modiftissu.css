@@ -58,23 +58,24 @@
     background-color: #E6DAD1; /* Couleur du bouton de soumission au survol */
   }
   
-  .modifprod a {
-    display: block; /* Le lien occupe une ligne entière */
-    text-align: center; /* Centrer le lien */
-    color: #230007; /* Couleur du texte du lien */
-    text-decoration: none;
-    margin-top: 50px; /* Espacement entre le formulaire et le lien */
+  .supprimertissu input[type="submit"] {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #57383B; /* Couleur du bouton de soumission */
+    color: #fff; /* Couleur du texte du bouton de soumission */
+    cursor: pointer;
+    margin-top: 700px;
   }
 
-  .containermodif .supprimertissu input[type="submit"]:hover {
-    color: #57383B; /* Nouvelle couleur du texte au survol */
+  .supprimertissu input[type="submit"]:hover {
+    color: #ffffff; /* Nouvelle couleur du texte au survol */
     background-color: #fff; /* Nouvelle couleur de fond au survol */
-    
   }
-
-  .containermodif .supprimertissu input[type="submit"]:hover {
-    background-color: #ff3737; /* Couleur du bouton de soumission au survol */
   
+  .supprimertissu input[type="submit"]:hover {
+    background-color: #c44f47; /* Couleur du bouton de soumission au survol */
   }
+  
 
   

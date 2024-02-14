@@ -22,9 +22,16 @@
     color: black;
 }
 
-/* .containertissu .card .btn{
-    color: black;
-} */
+
+.containertissu button {
+    border-radius: 3px;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.containertissu button:hover {
+    background-color: #58262f; /* Assombrir légèrement au survol */
+}
 
 
 

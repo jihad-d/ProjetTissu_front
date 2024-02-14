@@ -8,7 +8,7 @@ function Footer() {
     return (
         <footer className="footer">
             <div className="footer-left">
-                <a href="#">Accueil</a>
+                <a href="/">Accueil</a>
                 <a href="#">Contact</a>
                 <a href="/apropos">À propos de nous</a>
                 <a href="#">Termes et conditions</a>
