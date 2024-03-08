@@ -20,7 +20,7 @@ function Footer() {
                 {/* Ajoutez d'autres icônes de la même manière */}
             </div>
             <div className="footer-content">
-                <p>&copy; 2024 Tissu du Monde. Tous droits réservés.</p>
+                <p>&copy; 2024 Tissu du Monde.</p>
             </div>
         </footer>
     );

@@ -2,7 +2,7 @@ import React from 'react'
 import './inscription.css'
 function InscriptionPro(){
     return (
-        <div className='container'>
+        <div className='containerpro'>
 
             <form className="inscription" action="http://localhost:5000/api/inscriptionpro" method="post">
             <h1>Inscription Professionnel</h1>

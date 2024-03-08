@@ -43,3 +43,20 @@
     line-height: 100px; /* Centrer verticalement le texte à l'intérieur du rectangle */
   }
   
+  @media screen and (max-width: 768px) {
+    .hero-content {
+        width: 90%; /* Réduisez la largeur du contenu pour les petits écrans */
+    }
+    
+    .hero-buttons button {
+        font-size: 14px; /* Réduisez la taille de police des boutons pour les petits écrans */
+    }
+
+    .hero-image {
+      width: 100%;
+      height: 100vh; /* Hauteur égale à la hauteur de la fenêtre */
+      object-fit: cover; /* Redimensionne l'image pour qu'elle couvre la totalité de la zone d'affichage tout en préservant son aspect */
+      object-position: center; /* Centre l'image horizontalement et verticalement */
+      display: block;
+  }
+}

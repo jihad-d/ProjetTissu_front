@@ -6,16 +6,16 @@ body{
     justify-content: center;
     align-items: center;
     background-color: #E6DAD1; 
+    margin-bottom: 200px;
   } 
   
   .inscriptionpar{
     background-color: #230007; 
     padding: 20px;
     width: 50%;
-
     border-radius: 10px; 
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
-    margin-top: 150px;
+    margin-top: 120px;
   }
 
   .inscriptionpar h1 {
@@ -58,4 +58,24 @@ body{
 
   .inscriptionpar span{
     color: red;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .inscriptionpar {
+      width: 90%; /* Ajustement de la largeur pour les petits écrans */
+      font-size: 17px;
+    }
+    .inscriptionpar h1 {
+      font-size: 25px;
+      margin-top: 5px;
+      margin-bottom: 15px;
+    }
+    .inscriptionpar input[type="submit"] {
+      margin-top: 1px;
+      font-size: 17px;
+    }
+    .inscriptionpar label, .inscriptionpar input{
+      margin-top: 5px;
+      font-size: 17px;
+    }
   }
