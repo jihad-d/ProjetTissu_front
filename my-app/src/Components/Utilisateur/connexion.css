@@ -1,83 +1,80 @@
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #E6DAD1; /* Couleur de fond */
-  } 
+.container1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #E6DAD1; /* Couleur de fond */
+} 
+
+.login-form {
+  background-color: #230007; /* Couleur du formulaire */
+  padding: 20px;
+  width: 30%;
+  height: 400px;
+  border-radius: 10px; /* Bords arrondis */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre */
+}
+
+
+.login-form label, .login-form input, .login-form a {
+  display: block;
+  margin-bottom: 10px;
+  color: white;
+  width: 100%;
+  height: 30px;
+}
+
+.login-form input{
+  color: black;
+}
+
+.login-form input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #57383B; /* Couleur du bouton de soumission */
+  color: #fff; /* Couleur du texte du bouton de soumission */
+  cursor: pointer;
+  height: 35px;
+  margin-top: 20px;
+}
+
+.login-form input[type="submit"]:hover {
+  color: #57383B; /* Nouvelle couleur du texte au survol */
+  background-color: #fff; /* Nouvelle couleur de fond au survol */
+}
+
+.login-form input[type="submit"]:hover {
+  background-color: #E6DAD1; /* Couleur du bouton de soumission au survol */
+}
+
+.login-form a {
+  display: block; /* Le lien occupe une ligne entière */
+  text-align: center; /* Centrer le lien */
+  color: #230007; /* Couleur du texte du lien */
+  text-decoration: none;
+  margin-top: 50px; /* Espacement entre le formulaire et le lien */
   
+}
+
+.login-form a:hover {
+  text-decoration: underline; /* Souligner le lien au survol */
+}
+
+
+@media screen and (max-width: 768px) {
   .login-form {
-    background-color: #230007; /* Couleur du formulaire */
-    padding: 20px;
-    width: 30%;
-    height: 400px;
-    border-radius: 10px; /* Bords arrondis */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre */
+      width: 90%; /* Ajustement de la largeur du formulaire pour les petits écrans */
+      margin-bottom: 30px;
   }
-  
-  .login-form h1 {
-    text-align: center; /* Centrer le titre */
-    color: white;
-  }
-  
-  .login-form label, .login-form input, .login-form a {
-    display: block;
-    margin-bottom: 10px;
-    color: white;
-    width: 100%;
-    height: 30px;
-  }
-
-  .login-form input{
-    color: black;
-  }
-  
-  .login-form input[type="submit"] {
-    width: 100%;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    background-color: #57383B; /* Couleur du bouton de soumission */
-    color: #fff; /* Couleur du texte du bouton de soumission */
-    cursor: pointer;
-    height: 35px;
-    margin-top: 20px;
-  }
-
-  .login-form input[type="submit"]:hover {
-    color: #57383B; /* Nouvelle couleur du texte au survol */
-    background-color: #fff; /* Nouvelle couleur de fond au survol */
-  }
-  
-  .login-form input[type="submit"]:hover {
-    background-color: #E6DAD1; /* Couleur du bouton de soumission au survol */
-  }
-  
+  .login-form label,
+  .login-form input,
   .login-form a {
-    display: block; /* Le lien occupe une ligne entière */
-    text-align: center; /* Centrer le lien */
-    color: #230007; /* Couleur du texte du lien */
-    text-decoration: none;
-    margin-top: 50px; /* Espacement entre le formulaire et le lien */
-    
+      font-size: 1.2em; /* Taille de police ajustée pour les petits écrans */
+      margin-top: 10px;
   }
-
-  .login-form a:hover {
-    text-decoration: underline; /* Souligner le lien au survol */
+  .login-form input[type="submit"] {
+      font-size: 1.2em; /* Taille de police ajustée pour les petits écrans */
   }
-  
-
-  @media screen and (max-width: 768px) {
-    .login-form {
-        width: 90%; /* Ajustement de la largeur du formulaire pour les petits écrans */
-    }
-    .login-form label,
-    .login-form input,
-    .login-form a {
-        font-size: 1.2em; /* Taille de police ajustée pour les petits écrans */
-    }
-
-    .login-form input[type="submit"] {
-        font-size: 1.2em; /* Taille de police ajustée pour les petits écrans */
-    }
 }

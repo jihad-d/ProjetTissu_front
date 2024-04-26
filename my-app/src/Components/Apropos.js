@@ -3,7 +3,7 @@ import './apropos.css'
 
 function Apropos() {
     return (
-        <div>
+        <div className='apropos'>
             <br />
             <br />
             <br />

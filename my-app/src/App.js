@@ -14,6 +14,7 @@ import RecupDataForm from './Components/RecupDataForm';
 import NotFound from './Components/NotFound/NotFound';
 import Apropos from './Components/Apropos';
 import ModifTissu from './Components/Produit/ModifTissu';
+import Termes from './Components/Termes';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
         <Route path="/accueil" element={<Accueil />} />
         <Route path="/" element={<Hero />} />
         <Route path="/apropos" element={<Apropos />} />
+        <Route path="/termes" element={<Termes />} />
 
         {/* Tissu */}
         <Route path="/newproduit" element={<NewProduit />} />

@@ -11,7 +11,7 @@ function Footer() {
                 <a href="/">Accueil</a>
                 <a href="#">Contact</a>
                 <a href="/apropos">À propos de nous</a>
-                <a href="#">Termes et conditions</a>
+                <a href="/termes">Termes et conditions</a>
             </div>
             <div className="footer-right">
                 <a href="#"><FontAwesomeIcon icon={faTwitter} /></a>

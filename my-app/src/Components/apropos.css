@@ -1,6 +1,6 @@
 h1{
     text-align: center;
-    margin-top: 5px;
+    margin-top: 20px;
 }
 
 .text{
@@ -14,9 +14,6 @@ h1{
     margin-top: 20px;
     height: 400px;
     margin: 0 auto; /* Centre horizontalement */
-}
-
-.text{
     text-align: center;
     padding-left: 100px;
     padding-right: 100px;
@@ -25,15 +22,15 @@ h1{
     font-size: medium;
 }
 
+
 @media screen and (max-width: 768px) {
-    h1{
-        margin-top: 1px;
+    .apropos h1{
+        margin-top: -30px;
     }
     .text{
         height: 70%;
-        padding-left: 30px;
-        padding-right: 30px;
-        padding-top: 10px;
+        padding: 10px 30px; /* 10px en haut et en bas, 30px à gauche et à droite */
+        margin-top: -30px;
     }
   
 }

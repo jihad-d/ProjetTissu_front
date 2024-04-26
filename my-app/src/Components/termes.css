@@ -1,0 +1,31 @@
+h1{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.termes{
+    background-color: #57383B;
+    border: 8px solid #E6DAD1;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: #57383B;
+    margin-top: 20px;
+    margin: 0 auto;
+    text-align: center;
+    padding-left: 100px;
+    padding-right: 100px;
+    color: #E6DAD1;
+    margin-bottom: 20px;
+    font-size: medium;
+    margin-bottom: 15px;
+}
+
+@media screen and (max-width: 768px) {
+    .termes {
+        padding: 20px; /* Réduit le padding pour les petits écrans */
+        margin-left: 5px; /* Réduit la marge à gauche */
+        margin-right: 5px; /* Réduit la marge à droite */
+    }
+}

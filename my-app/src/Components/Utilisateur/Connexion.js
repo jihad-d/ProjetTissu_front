@@ -3,7 +3,7 @@ import './connexion.css'
 
 function Connexion(){
     return(
-        <div className='container'>
+        <div className='container1'>
             <form className="login-form"action="http://localhost:5000/connexion" method="post">
             <h1>Connexion</h1>
             <br/>
