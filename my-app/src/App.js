@@ -32,7 +32,7 @@ function App() {
         {/* Tissu */}
         <Route path="/newproduit" element={<NewProduit />} />
         <Route path='/affichertissu' element={<AfficherTissu/>} />
-        <Route path='/affichertissu' element={<ModifTissu/>} />
+        {/* <Route path='/affichertissu' element={<ModifTissu/>} /> */}
         <Route path="/modiftissu" element={<ModifTissu />} />
 
         {/* CRUD users */}

@@ -5,27 +5,26 @@ h1{
 
 .termes{
     background-color: #57383B;
-    border: 8px solid #E6DAD1;
+    border: 10px solid #E6DAD1;
     display: flex;
     flex-direction: column; 
     justify-content: center; 
     align-items: center; 
     background-color: #57383B;
-    margin-top: 20px;
     margin: 0 auto;
     text-align: center;
     padding-left: 100px;
-    padding-right: 100px;
+    padding-right: 150px;
+    padding-bottom: 35px;
     color: #E6DAD1;
     margin-bottom: 20px;
     font-size: medium;
-    margin-bottom: 15px;
+    transform: scale(0.8);
 }
 
 @media screen and (max-width: 768px) {
     .termes {
-        padding: 20px; /* Réduit le padding pour les petits écrans */
-        margin-left: 5px; /* Réduit la marge à gauche */
-        margin-right: 5px; /* Réduit la marge à droite */
+        padding: 20px;
+        padding-top: 9px;
     }
 }

@@ -151,25 +151,24 @@ nav input{
   font-weight: 600;
 }
 
-
 .btn.menu-btn {
   display: none; /* Cachez le bouton de menu par défaut */
 }
 
-/* Utilisez les médias queries pour afficher le bouton de menu et cacher les liens sur les petits écrans */
 @media screen and (max-width: 768px) {
+  .logo{
+    font-size: 5px;
+  }
   .nav-links {
     display: none; /* Cachez les liens par défaut sur les petits écrans */
   }
 
   .btn.menu-btn {
-    display: block; /* Affichez le bouton de menu sur les petits écrans */
-    /* Ajoutez les styles pour le bouton de menu */
+    display: block;
   }
 
   .nav-links.show {
-    display: block; /* Affichez les liens lorsque showMenu est true */
-    /* Ajoutez les styles pour les liens affichés */
+    display: block; 
   }
 
 }

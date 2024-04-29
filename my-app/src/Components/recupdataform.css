@@ -1,0 +1,50 @@
+.h3 {
+    align-items: center;
+    color: #230007;
+}
+
+.containerinfo {
+    background-color: #230007;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    width: 350px;
+    /* margin-left: 38%; */
+}
+
+.containerinfo label,
+.containerinfo input {
+    color: white;
+    width: 250px;
+}
+
+.containerinfo input[type="submit"] {
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: purple;
+    /* Bouton en rouge */
+    color: white;
+    /* Texte en blanc */
+    border: none;
+    cursor: pointer;
+}
+
+/* Style du bouton */
+.delete-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: red; /* Couleur de fond rouge */
+    color: white; /* Couleur du texte en blanc */
+    text-decoration: none; /* Suppression du soulignement du lien */
+    border: none; /* Suppression de la bordure */
+    border-radius: 5px; /* Bordure arrondie */
+    cursor: pointer; /* Curseur de type pointeur au survol */
+    transition: background-color 0.3s ease; /* Animation de transition */
+  }
+  
+  /* Au survol, assombrir légèrement la couleur de fond */
+  .delete-button:hover {
+    background-color: darkred;
+  }
+  

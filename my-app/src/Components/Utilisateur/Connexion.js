@@ -16,7 +16,7 @@ function Connexion(){
                 <br/>
                 <input type="submit" value="Connexion"/>
                 <br/>
-                <a href="/accueil">Inscription</a>
+                <a href="/">Inscription</a>
                 {/* <a href="#" className='mdp'>Mot de passe oublié</a> */}
                 <br/>
             </form>

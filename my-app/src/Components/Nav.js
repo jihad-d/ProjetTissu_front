@@ -15,7 +15,7 @@ function Nav() {
         <div className="logo">
           <a href="/">Tissu du monde</a>
         </div>
-        <input type="checkbox" id="menu-btn" checked={showMenu} onChange={toggleMenu} /> {/* Utilisez un checkbox pour le bouton de menu */}
+        
         <label htmlFor="menu-btn" className="btn menu-btn">
           <span></span> {/* Utilisez des spans pour les trois barres du menu */}
           <span></span>

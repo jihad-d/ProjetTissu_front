@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import axios from 'axios'
 import { useParams } from 'react-router-dom';
+import './recupdataform.css'
 
 function RecupDataForm() {
 
@@ -46,13 +47,14 @@ function RecupDataForm() {
       <br/>
       <br/>
       <br/>
-            <h3>Mes informations</h3><br/>
-
+      <div className='info'>
+          <h3>Mes informations</h3><br/>
+      </div>
+      <div className='containerinfo'>
                 <form action={`http://localhost:5000/recupdataform/${params.id}?_method=PUT`} method="post">
                     <input type="hidden" name="_method" value="PUT"/>
-
                     <label for="">Nom</label><br/>
-                    <input type="text" name="nom" defaultValue={nom}/><br/>
+                    <input type="text" name="nom" defaultValue={nom.data}/><br/>
                     <br/>
                     <label for="">Prenom</label><br/>
                     <input type="text" name="prenom" defaultValue={prenom}/><br/>
@@ -78,16 +80,21 @@ function RecupDataForm() {
                     <label for="">Mot de passe</label><br/>
                     <input type="password" name="password"/><br/>
                     <br/>
-
                     <input type="submit" value="Modifier"/>
                 </form>
+      </div>
                 <br/>
+                <a href="/supprimer/<%=data._id%>?_method=DELETE" class="delete-button">Suppression du compte</a>
 
-                <a href="/deconnexion/<%=data._id%>"><input type="submit" value="Déconnexion"/></a><br/>
-                <br/>
-                <a href="/supprimer/<%=data._id%>?_method=DELETE"><input type="submit" value="Supression du compte"/></a><br/>
-        </div>
+                {/* <a href="/supprimer/<%=data._id%>?_method=DELETE"><input type="submit" value="Supression du compte"/></a><br/> */}
+    </div>
   )
 }
 
 export default RecupDataForm
+
+
+
+// <a href={`/deconnexion/${params.id}`}><input type="button" value="Déconnexion" /></a><br />
+// <br />
+// <a href={`/supprimer/${params.id}?_method=DELETE`}><input type="button" value="Suppression du compte" /></a><br />
