@@ -48,7 +48,7 @@ function RecupDataForm() {
       <br/>
       <br/>
       <div className='info'>
-          <h3>Mes informations</h3><br/>
+          <h2>Mes informations</h2><br/>
       </div>
       <div className='containerinfo'>
                 <form action={`http://localhost:5000/recupdataform/${params.id}?_method=PUT`} method="post">
@@ -81,11 +81,9 @@ function RecupDataForm() {
                     <input type="password" name="password"/><br/>
                     <br/>
                     <input type="submit" value="Modifier"/>
+                    <a href="/supprimer/<%=data._id%>?_method=DELETE" class="delete-button">Suppression du compte</a>
                 </form>
       </div>
-                <br/>
-                <a href="/supprimer/<%=data._id%>?_method=DELETE" class="delete-button">Suppression du compte</a>
-
                 {/* <a href="/supprimer/<%=data._id%>?_method=DELETE"><input type="submit" value="Supression du compte"/></a><br/> */}
     </div>
   )

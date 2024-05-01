@@ -1,50 +1,92 @@
-.h3 {
-    align-items: center;
-    color: #230007;
+.info {
+    text-align: center;
+    /* Centrer le texte à l'intérieur de .info */
+    margin-bottom: 10px;
+    /* Ajouter un espace en bas */
+    margin-top: 30px;
+    text-decoration: underline;
 }
 
 .containerinfo {
     background-color: #230007;
-    border-radius: 5px;
+    border-radius: 10px;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    /* Pour que les éléments soient alignés verticalement */
+    align-items: center;
+    /* Centrer les éléments horizontalement */
     padding: 30px;
-    width: 350px;
-    /* margin-left: 38%; */
+    width: 600px;
+    margin: 0 auto;
+    /* Pour centrer .containerinfo horizontalement */
+    margin-bottom: 100px;
+    
 }
 
 .containerinfo label,
 .containerinfo input {
     color: white;
-    width: 250px;
+    width: 550px;
+    margin-bottom: 10px;
+    height: 23px;
+    /* Ajouter un espace entre les éléments */
 }
 
 .containerinfo input[type="submit"] {
-    padding: 10px 20px;
+    padding: 10px 30px;
     border-radius: 5px;
-    background-color: purple;
-    /* Bouton en rouge */
+    background-color: #57383B;
     color: white;
-    /* Texte en blanc */
     border: none;
     cursor: pointer;
+    margin-top: 10px;
+    height: 35px;
+    font-size: medium;
 }
 
-/* Style du bouton */
+.containerinfo input[type="submit"]:hover {
+    background-color: #E6DAD1;
+    color: black;
+}
+
+
 .delete-button {
     display: inline-block;
     padding: 10px 20px;
-    background-color: red; /* Couleur de fond rouge */
-    color: white; /* Couleur du texte en blanc */
-    text-decoration: none; /* Suppression du soulignement du lien */
-    border: none; /* Suppression de la bordure */
-    border-radius: 5px; /* Bordure arrondie */
-    cursor: pointer; /* Curseur de type pointeur au survol */
-    transition: background-color 0.3s ease; /* Animation de transition */
-  }
-  
-  /* Au survol, assombrir légèrement la couleur de fond */
-  .delete-button:hover {
     background-color: darkred;
-  }
-  
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 550px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Au survol, assombrir légèrement la couleur de fond */
+.delete-button:hover {
+    background-color: red;
+}
+
+
+@media screen and (max-width: 768px) {
+    .containerinfo {
+        width: 90%;
+        padding: 20px;
+        padding-left: 5px;
+        padding-right: 5px;
+        margin-bottom: 150px;
+    }
+
+    .containerinfo label,
+    .containerinfo input {
+        width: 100%;
+    }
+
+    .delete-button {
+        display: flex;
+        justify-content: center; /* Centre horizontalement */
+    }
+}
