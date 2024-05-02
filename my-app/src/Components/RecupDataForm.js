@@ -21,8 +21,9 @@ function RecupDataForm() {
 
     // récupérer les données entrées par l'utilisateur pro lors de l'inscription
     useEffect(()=>{
-        axios.get(`/recupdataform/${params.id}`)
+        axios.get(`http://localhost:5000/recupdataform/${params.id}`)
         .then(response =>{
+          console.log(response.data);
             const { data } = response;
             setLoading(false)
             console.log(response.data);
@@ -42,6 +43,8 @@ function RecupDataForm() {
           })
     }, [])
 
+
+
   return (
     <div>
       <br/>
@@ -53,32 +56,40 @@ function RecupDataForm() {
       <div className='containerinfo'>
                 <form action={`http://localhost:5000/recupdataform/${params.id}?_method=PUT`} method="post">
                     <input type="hidden" name="_method" value="PUT"/>
-                    <label for="">Nom</label><br/>
-                    <input type="text" name="nom" defaultValue={nom.data}/><br/>
+                    <label for="">Nom</label>
+                    {/* <p>{nom}</p><br/> */}
+                    <input type="text" name="nom" defaultValue={nom}/><br/>
                     <br/>
                     <label for="">Prenom</label><br/>
+                    {/* <p>{prenom}</p><br/> */}
                     <input type="text" name="prenom" defaultValue={prenom}/><br/>
                     <br/>
                     <label for="">Email</label><br/>
+                    {/* <p>{email}</p><br/> */}
                     <input type="email" name="email" defaultValue={email} required/><br/>
                     <br/>
                     <label for="">Téléphone</label><br/>
+                    {/* <p>{tel}</p><br/> */}
                     <input type="number" name="tel" defaultValue={tel} maxlength="10"/><br/>
                     <br/>
                     <label for="">Société</label><br/>
+                    {/* <p>{societe}</p><br/> */}
                     <input type="text" name="societe" defaultValue={societe} required/><br/>
                     <br/>
                     <label for="">SIRET ou TVA</label><br/>
+                    {/* <p>{siretTva}</p><br/> */}
                     <input type="number" name="siretTva" defaultValue={siretTva} maxlength="14" required/><br/>
                     <br/>
                     <label for="">Adresse</label><br/>
+                    {/* <p>{adresse}</p><br/> */}
                     <input type="text" name="adresse" defaultValue={adresse}/><br/>
                     <br/>
                     <label for="">URL</label><br/>
+                    {/* <p>{url}</p><br/> */}
                     <input type="text" name="url" defaultValue={url}/><br/>
                     <br/>
                     <label for="">Mot de passe</label><br/>
-                    <input type="password" name="password"/><br/>
+                    <input type="password" name="password" required/><br/>
                     <br/>
                     <input type="submit" value="Modifier"/>
                     <a href="/supprimer/<%=data._id%>?_method=DELETE" class="delete-button">Suppression du compte</a>
@@ -91,8 +102,3 @@ function RecupDataForm() {
 
 export default RecupDataForm
 
-
-
-// <a href={`/deconnexion/${params.id}`}><input type="button" value="Déconnexion" /></a><br />
-// <br />
-// <a href={`/supprimer/${params.id}?_method=DELETE`}><input type="button" value="Suppression du compte" /></a><br />

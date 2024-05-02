@@ -17,11 +17,9 @@
     margin-top: 200px;
 }
 
-
 .containertissu .card p {
     color: black;
 }
-
 
 .containertissu button {
     border-radius: 3px;
@@ -34,6 +32,7 @@
 }
 
 
-
-
+@media screen and (max-width: 768px) {
+    
+}
 

@@ -1,10 +1,12 @@
 .info {
     text-align: center;
-    /* Centrer le texte à l'intérieur de .info */
     margin-bottom: 10px;
-    /* Ajouter un espace en bas */
     margin-top: 30px;
     text-decoration: underline;
+}
+
+.containerinfo p{
+    color: #E6DAD1;
 }
 
 .containerinfo {
@@ -12,13 +14,10 @@
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    /* Pour que les éléments soient alignés verticalement */
     align-items: center;
-    /* Centrer les éléments horizontalement */
     padding: 30px;
     width: 600px;
     margin: 0 auto;
-    /* Pour centrer .containerinfo horizontalement */
     margin-bottom: 100px;
     
 }
@@ -29,7 +28,10 @@
     width: 550px;
     margin-bottom: 10px;
     height: 23px;
-    /* Ajouter un espace entre les éléments */
+}
+
+.containerinfo input {
+    color: black;
 }
 
 .containerinfo input[type="submit"] {
@@ -65,7 +67,7 @@
     margin-top: 10px;
 }
 
-/* Au survol, assombrir légèrement la couleur de fond */
+
 .delete-button:hover {
     background-color: red;
 }
@@ -78,15 +80,19 @@
         padding-left: 5px;
         padding-right: 5px;
         margin-bottom: 150px;
+        /* display: flex;
+        flex-direction: column;
+        align-items: center; */
     }
 
-    .containerinfo label,
-    .containerinfo input {
+    .containerinfo label, .containerinfo input {
         width: 100%;
+        /* margin-left: 110px; */
     }
 
     .delete-button {
+        width: 330px;
         display: flex;
-        justify-content: center; /* Centre horizontalement */
+        justify-content: center; 
     }
 }
