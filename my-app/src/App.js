@@ -15,6 +15,7 @@ import NotFound from './Components/NotFound/NotFound';
 import Apropos from './Components/Apropos';
 import ModifTissu from './Components/Produit/ModifTissu';
 import Termes from './Components/Termes';
+import Contact from './Components/Contact';
 
 
 function App() {
@@ -28,6 +29,8 @@ function App() {
         <Route path="/" element={<Hero />} />
         <Route path="/apropos" element={<Apropos />} />
         <Route path="/termes" element={<Termes />} />
+        <Route path="/contact" element={<Contact />} />
+        
 
         {/* Tissu */}
         <Route path="/newproduit" element={<NewProduit />} />

@@ -1,0 +1,34 @@
+  .contact{
+    border: #230007;
+  }
+  
+  .contact h2 {
+    color: #230007;
+    padding-left: 40px;
+    padding-top: 125px;
+  }
+  
+  .contact p.num {
+    color: #230007;
+    margin-top: 25px;
+    padding-left: 40px;
+  }
+  
+  .contact p.email {
+    color: #230007;
+    margin-top: 15px;
+    padding-left: 40px;
+  }
+  
+  .contact span {
+    font-weight: bold; 
+  }
+
+  .contact hr{
+    color: #230007;
+    border-width: 1px;
+    border-style: solid;
+    margin-left: 15px;
+    margin-right: 500px;
+  }
+  

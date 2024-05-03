@@ -56,7 +56,7 @@ function AfficherTissu() {
           return (
             <div className="card" key={index}>
               {tissu.image && <img src={`http://localhost:5000/afficher/`} style={{ "width": "50%" }} />}
-              <h1>{tissu.titre}</h1>
+              <h1 className='titretissu'>{tissu.titre}</h1>
               <br />
               <p className='couleur'>Couleur : {tissu.couleur}</p>
               <br />

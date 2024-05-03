@@ -3,11 +3,11 @@ import './nav.css'
 
 
 function Nav() {
-  const [showMenu, setShowMenu] = useState(false); // État pour contrôler l'affichage du menu
+  const [showMenu, setShowMenu] = useState(false); 
 
-  const toggleMenu = () => {
-    setShowMenu(!showMenu); // Inverse l'état du menu lorsqu'on clique sur le bouton
-  };
+  // const toggleMenu = () => {
+  //   setShowMenu(!showMenu); 
+  // };
 
   return (
     <nav>
@@ -17,11 +17,11 @@ function Nav() {
         </div>
         
         <label htmlFor="menu-btn" className="btn menu-btn">
-          <span></span> {/* Utilisez des spans pour les trois barres du menu */}
+          <span></span> 
           <span></span>
           <span></span>
         </label>
-        <ul className={`nav-links ${showMenu ? 'show' : ''}`}> {/* Ajoutez la classe 'show' si showMenu est true */}
+        <ul className={`nav-links ${showMenu ? 'show' : ''}`}> 
           <label htmlFor="menu-btn" className="btn close-btn"><i className="fas fa-times"></i></label>
           <li>
             <a href="/affichertissu" className="desktop-item">Tissu</a>
@@ -33,7 +33,7 @@ function Nav() {
               <li><a href="/newproduit">Ajouter tissu</a></li>
             </ul>
           </li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="/contact">Contact</a></li>
           <li><a href="/connexion">Panier</a></li>
           <li>
             <a href="#" className="desktop-item">Profil</a>
@@ -49,7 +49,7 @@ function Nav() {
   );
 }
 
-export default Nav;
+export default Nav
 
 
 

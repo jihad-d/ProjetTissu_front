@@ -17,6 +17,10 @@
     margin-top: 200px;
 }
 
+.containertissu .couleur {
+    text-decoration: underline;
+}
+
 .containertissu .card p {
     color: black;
 }
@@ -25,6 +29,10 @@
     border-radius: 3px;
     padding: 10px 20px;
     cursor: pointer;
+}
+
+.containertissu .p.btnmodif {
+    text-decoration: none;
 }
 
 .containertissu button:hover {

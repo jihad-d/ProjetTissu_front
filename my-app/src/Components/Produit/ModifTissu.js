@@ -41,7 +41,6 @@ function ModifTissu(props) {
   );
   
   
-  
 }
 
 export default ModifTissu

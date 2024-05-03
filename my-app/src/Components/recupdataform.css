@@ -52,7 +52,7 @@
 }
 
 
-.delete-button {
+/* .delete-button {
     display: inline-block;
     padding: 10px 20px;
     background-color: darkred;
@@ -67,6 +67,41 @@
     margin-top: 10px;
 }
 
+
+.delete-button:hover {
+    background-color: red;
+} */
+
+.submit-button {
+    padding: 10px 30px;
+    border-radius: 5px;
+    background-color: #57383B;
+    color: white;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    height: 35px;
+    font-size: medium;
+}
+
+.submit-button:hover {
+    background-color: #4CAF50; /* Changez la couleur selon votre préférence */
+}
+
+.delete-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: darkred;
+    color: white;
+    text-decoration: none;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 550px;
+    text-align: center;
+    margin-top: 10px;
+}
 
 .delete-button:hover {
     background-color: red;

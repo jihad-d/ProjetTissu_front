@@ -3,25 +3,24 @@
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: #E6DAD1; /* Couleur de fond */
+    background-color: #E6DAD1; 
   } 
   
   .modifprod h1{
     color: white;
-    
     text-align: center;
   }
 
   .modifprod {
-    background-color: #230007; /* Couleur du formulaire */
+    background-color: #230007; 
     padding: 20px;
     width: 30%;
-    border-radius: 10px; /* Bords arrondis */
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
   }
   
   .login-form h1 {
-    text-align: center; /* Centrer le titre */
+    text-align: center; 
     color: white;
   }
   
@@ -43,46 +42,49 @@
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #57383B; /* Couleur du bouton de soumission */
-    color: #fff; /* Couleur du texte du bouton de soumission */
+    background-color: #57383B; 
+    color: #fff; 
     cursor: pointer;
     height: 35px;
     margin-top: 20px;
   }
 
   .modifprod input[type="submit"]:hover {
-    color: #57383B; /* Nouvelle couleur du texte au survol */
-    background-color: #fff; /* Nouvelle couleur de fond au survol */
+    color: #57383B; 
+    background-color: #fff; 
   }
   
   .modifprod input[type="submit"]:hover {
-    background-color: #E6DAD1; /* Couleur du bouton de soumission au survol */
+    background-color: #E6DAD1;
   }
   
   .supprimertissu input[type="submit"] {
     padding: 10px;
     border: none;
     border-radius: 5px;
-    background-color: #57383B; /* Couleur du bouton de soumission */
-    color: #fff; /* Couleur du texte du bouton de soumission */
+    background-color: darkred; 
+    color: #fff; 
     cursor: pointer;
     margin-top: 700px;
-    margin-right: 50px;
+    /* margin-right: 50px; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 
   .supprimertissu input[type="submit"]:hover {
-    color: #ffffff; /* Nouvelle couleur du texte au survol */
-    background-color: #fff; /* Nouvelle couleur de fond au survol */
+    color: #ffffff; 
+    background-color: #fff; 
   }
   
   .supprimertissu input[type="submit"]:hover {
-    background-color: #c44f47; /* Couleur du bouton de soumission au survol */
+    background-color: red; 
   }
   
 
   @media screen and (max-width: 768px) {
     .modifprod {
-      width: 80%; /* Réduire la largeur pour les écrans plus petits */
+      width: 100%; 
       align-items: center;
     }
   }

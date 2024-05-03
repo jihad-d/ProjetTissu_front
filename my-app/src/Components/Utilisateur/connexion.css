@@ -3,18 +3,17 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  background-color: #E6DAD1; /* Couleur de fond */
+  background-color: #E6DAD1; 
 } 
 
 .login-form {
-  background-color: #230007; /* Couleur du formulaire */
+  background-color: #230007; 
   padding: 20px;
   width: 30%;
-  height: 400px;
-  border-radius: 10px; /* Bords arrondis */
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Ombre */
+  height: 480px;
+  border-radius: 10px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
 }
-
 
 .login-form label, .login-form input, .login-form a {
   display: block;
@@ -33,48 +32,51 @@
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #57383B; /* Couleur du bouton de soumission */
-  color: #fff; /* Couleur du texte du bouton de soumission */
+  background-color: #57383B; 
+  color: #fff; 
   cursor: pointer;
   height: 35px;
   margin-top: 20px;
 }
 
 .login-form input[type="submit"]:hover {
-  color: #57383B; /* Nouvelle couleur du texte au survol */
-  background-color: #fff; /* Nouvelle couleur de fond au survol */
+  color: #57383B; 
+  background-color: #fff; 
 }
 
 .login-form input[type="submit"]:hover {
-  background-color: #E6DAD1; /* Couleur du bouton de soumission au survol */
+  background-color: #E6DAD1; 
 }
 
 .login-form a {
-  display: block; /* Le lien occupe une ligne entière */
-  text-align: center; /* Centrer le lien */
-  color: #230007; /* Couleur du texte du lien */
+  display: block; 
+  text-align: center; 
+  color: #230007; 
   text-decoration: none;
-  margin-top: 50px; /* Espacement entre le formulaire et le lien */
-  
 }
 
 .login-form a:hover {
-  text-decoration: underline; /* Souligner le lien au survol */
+  text-decoration: underline; 
 }
 
+.img .captcha-img {
+  background-color: white; 
+  padding: 10px; /* Marge intérieure pour l'espace autour du captcha */
+  border-radius: 5px; /* Ajoute des coins arrondis */
+}
 
 @media screen and (max-width: 768px) {
   .login-form {
-      width: 90%; /* Ajustement de la largeur du formulaire pour les petits écrans */
+      width: 100%; 
       margin-bottom: 30px;
   }
   .login-form label,
   .login-form input,
   .login-form a {
-      font-size: 1.2em; /* Taille de police ajustée pour les petits écrans */
+      font-size: 1.2em;
       margin-top: 10px;
   }
   .login-form input[type="submit"] {
-      font-size: 1.2em; /* Taille de police ajustée pour les petits écrans */
+      font-size: 1.2em; 
   }
 }
