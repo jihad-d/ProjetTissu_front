@@ -2,6 +2,7 @@ import React from 'react'
 import './inscriptionpar.css'
 
 function InscriptionPar (){
+    
     return(
         <div className='containerpar'>
 

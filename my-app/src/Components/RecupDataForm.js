@@ -71,7 +71,7 @@ function RecupDataForm() {
           {/* <p>{nom}</p><br/> */}
           <input type="text" name="nom" defaultValue={nom} /><br />
           <br />
-          <label for="">Prenom</label><br />
+          <label for="">Prénom</label><br />
           {/* <p>{prenom}</p><br/> */}
           <input type="text" name="prenom" defaultValue={prenom} /><br />
           <br />
@@ -104,12 +104,12 @@ function RecupDataForm() {
           <button type="button" onClick={toggleShowPassword}>{showPassword ? "Masquer" : "Afficher"}</button> {/* Bouton pour activer/désactiver l'affichage du mot de passe */}
           <br />
           <input type="submit" value="Modifier" onClick={handleFieldChange} />
-          <a href="http://localhost:5000/deconnexion">Déconnexion</a>
+          {/* <a href="http://localhost:5000/deconnexion">Déconnexion</a> */}
         </form>
 
         <form action={`http://localhost:5000/supprimerpro/${params.id}?_method=DELETE`} method="post">
           <input type="hidden" name="_method" value="DELETE" />
-          <input type="submit" value="Suppression du compte" />
+          <input className="supp" type="submit" value="Suppression du compte" />
         </form>
       </div>
       {/* <a href="/supprimer/<%=data._id%>?_method=DELETE"><input type="submit" value="Supression du compte"/></a><br/> */}

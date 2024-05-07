@@ -5,7 +5,6 @@ import './inscription.css'
 function InscriptionPro() {
 
     const [affichMdp, setAffichMdp] = useState(false);
-
     const toggleAffichMdp = () => {
         setAffichMdp(!affichMdp);
     };
@@ -21,10 +20,10 @@ function InscriptionPro() {
         const isValidPassword = regExp.test(password)
 
         if (isValidPassword) {
-            setMessage("password is valid")
+            setMessage("Le mot de passe est valide")
         }
         else {
-            setMessage("Invalid password")
+            setMessage("Le mot de passe doit contenir au minimum 12 caractères")
         }
     }
 

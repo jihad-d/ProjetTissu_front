@@ -51,26 +51,12 @@
     color: black;
 }
 
-
-/* .delete-button {
-    display: inline-block;
-    padding: 10px 20px;
-    background-color: darkred;
-    color: white;
-    text-decoration: none;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    width: 550px;
-    text-align: center;
-    margin-top: 10px;
+.containerinfo input.supp[type="submit"]:hover {
+    background-color: #ca2f2f;
+    color: #E6DAD1;
 }
 
 
-.delete-button:hover {
-    background-color: red;
-} */
 
 .submit-button {
     padding: 10px 30px;

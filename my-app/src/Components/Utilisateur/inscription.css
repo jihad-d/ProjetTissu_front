@@ -20,6 +20,9 @@
   text-align: center; 
   color: white;
 }
+.inscription p {
+  color: white;
+}
 
 .inscription label, .inscription input{
   display: block;
