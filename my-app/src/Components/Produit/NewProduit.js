@@ -1,13 +1,33 @@
 import React, { useState } from 'react';
 import axios from 'axios';
 import './newproduit.css';
-
+import { useNavigate } from 'react-router-dom';
 function NewProduit() {
   const [selectedFile, setSelectedFile] = useState(null);
-
-  const handleFileChange = event => {
+  const handleFileChange = (event) => {
     setSelectedFile(event.target.files[0]);
   };
+  const navigate = useNavigate();
+
+
+  // const handleSubmit = (event) => {
+  //   event.preventDefault();
+  //   if (selectedFile) {
+  //     const formData = new FormData();
+  //     formData.append('image', selectedFile);
+  //     formData.append('titre', event.target.titre.value);
+  //     formData.append('couleur', event.target.couleur.value);
+  //     formData.append('description', event.target.description.value);
+
+  //     axios.post('http://localhost:5000/images', formData)
+  //       .then((response) => {
+  //         console.log(response.data);
+  //       })
+  //       .catch((error) => {
+  //         console.error(error);
+  //       });
+  //   }
+  // };
 
   const handleSubmit = event => {
     event.preventDefault();
@@ -20,10 +40,12 @@ function NewProduit() {
     axios.post('http://localhost:5000/newproduit', formData)
       .then(response => {
         console.log(response);
+        navigate('/affichertissu') 
       })
       .catch(error => {
         console.log(error);
       });
+       ;
   };
 
   return (
@@ -31,9 +53,8 @@ function NewProduit() {
       <br />
       <br />
       <div className='container'>
-        <form className="ajtprod" onSubmit={handleSubmit} encType="multipart/form-data">
+      <form className="ajtprod" onSubmit={handleSubmit} encType="multipart/form-data">
           <h1>Ajouter un tissu</h1>
-          <label>Image</label>
           <input type="file" onChange={handleFileChange} />
           <br />
           <label>Titre</label>
@@ -52,6 +73,6 @@ function NewProduit() {
   );
 }
 
-export default NewProduit;
+export default NewProduit
 
 

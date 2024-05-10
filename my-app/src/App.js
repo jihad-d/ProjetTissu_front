@@ -16,6 +16,7 @@ import Apropos from './Components/Apropos';
 import ModifTissu from './Components/Produit/ModifTissu';
 import Termes from './Components/Termes';
 import Contact from './Components/Contact';
+import RecupDataFormPar from './Components/RecupDataFormPar';
 
 
 function App() {
@@ -42,8 +43,10 @@ function App() {
         <Route path='/inscriptionpro' element={<InscriptionPro />} />
         <Route path='/inscriptionpar' element={<InscriptionPar />} />
         <Route path='/connexion' element={<Connexion />} />
+        {/* <Route path='/connexionpro' element={<Connexion />} /> */}
         {/* <Route path='/profil' element={<RecupDataForm />} /> */}
         <Route path='/recupdataform/:id' element={<RecupDataForm />} />
+        <Route path='/recupdataformpar/:id' element={<RecupDataFormPar />} />
         <Route path='/footer' element={<Footer />} />
         <Route path='/*' element={<NotFound />} />
         

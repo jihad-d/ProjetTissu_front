@@ -36,6 +36,10 @@
     color: black;
   }
 
+  .ajtprod input.imgtissu{
+    color: rgb(255, 255, 255);
+  }
+
   .ajtprod input[type="submit"] {
     width: 100%;
     padding: 10px;

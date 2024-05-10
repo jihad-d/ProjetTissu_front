@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { useParams } from 'react-router-dom';
-import './recupdataformpar.css';
 
 function RecupDataFormPar() {
 
@@ -16,6 +15,7 @@ function RecupDataFormPar() {
   const [showPassword, setShowPassword] = useState(false); // Nouvelle variable d'état pour gérer l'affichage du mot de passe
 
   const params = useParams();
+  
 
   // récupérer les données entrées par l'utilisateur particulier lors de l'inscription
   useEffect(() => {
@@ -71,7 +71,7 @@ function RecupDataFormPar() {
           <input type="date" name="dateDeNaissance" defaultValue={dateDeNaissance}/><br />
           <br />
           <label for="">Téléphone</label><br />
-          <input type="number" name="tel" defaultValue={tel} maxLength="10" /><br />
+          <input type="text" name="tel" defaultValue={tel} maxLength="10" /><br />
           <br />
           <label for="">Email</label><br />
           <input type="email" name="email" defaultValue={email} required /><br />
@@ -81,7 +81,7 @@ function RecupDataFormPar() {
           <button type="button" onClick={toggleShowPassword}>{showPassword ? "Masquer" : "Afficher"}</button> 
           <br />
           <input type="submit" value="Modifier" onClick={handleFieldChange} />
-          <a href="http://localhost:5000/deconnexion">Déconnexion</a>
+          {/* <a href="http://localhost:5000/deconnexion">Déconnexion</a> */}
         </form>
 
         <form action={`http://localhost:5000/supprimerpar/${params.id}?_method=DELETE`} method="post">
@@ -93,4 +93,4 @@ function RecupDataFormPar() {
   )
 }
 
-export default RecupDataFormPar;
+export default RecupDataFormPar

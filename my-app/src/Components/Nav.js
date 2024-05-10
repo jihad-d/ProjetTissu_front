@@ -4,24 +4,28 @@ import axios from 'axios';
 
 function Nav() {
   const [showMenu, setShowMenu] = useState(false);
-  const [connecter, setConnecter] = useState(false); 
+  const [connecter, setConnecter] = useState(false);
+  const [vendeur, setVendeur] = useState(false); // Ajouter un état pour vérifier si l'utilisateur est un vendeur
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
-
 
   useEffect(() => {
     axios.get(`http://localhost:5000/getjwt`, { withCredentials: true })
       .then(response => {
-        setLoading(false)
-        setConnecter(true)
+        setLoading(false);
+        setConnecter(true);
 
+        // Vérifier si l'utilisateur est un vendeur
+        if (response.data.vendeur) {
+          setVendeur(true);
+        }
       })
       .catch(err => {
-        setLoading(false)
-        setError(err.message)
-        setConnecter(false)
+        setLoading(false);
+        setError(err.message);
+        setConnecter(false);
       })
-  }, [])
+  }, []);
 
   const toggleMenu = () => {
     setShowMenu(!showMenu);
@@ -34,13 +38,13 @@ function Nav() {
           <a href="/">Tissu du monde</a>
         </div>
 
-        <label for="menu-btn" className="btn menu-btn" onClick={toggleMenu}>
+        <label htmlFor="menu-btn" className="btn menu-btn" onClick={toggleMenu}>
           <span></span>
           <span></span>
           <span></span>
         </label>
         <ul className={`nav-links ${showMenu ? 'show' : ''}`}>
-          <label for="menu-btn" className="btn close-btn" onClick={toggleMenu}>
+          <label htmlFor="menu-btn" className="btn close-btn" onClick={toggleMenu}>
             <i className="fas fa-times"></i>
           </label>
           <li>
@@ -50,20 +54,20 @@ function Nav() {
               <li><a href="#">Coton</a></li>
               <li><a href="#">Laine</a></li>
               <li><a href="#">Lin</a></li>
-              {!connecter && <li><a href="/newproduit">Ajouter tissu</a></li>}
+              {vendeur && <li><a href="/newproduit">Ajouter tissu</a></li>}{/* Afficher le lien "Ajouter tissu" si l'utilisateur est un vendeur */}
             </ul>
           </li>
           <li><a href="/contact">Contact</a></li>
           <li><a href={connecter ? '/panier' : '/connexion'}>{connecter ? 'Panier' : 'Panier'}</a></li>
           <li>
-            <a href="`http://localhost:3000/recupdataform/${req.params.id}`" className="desktop-item">{connecter ? 'Profil' : 'Connexion'}</a>
+            <a href="/connexion" className="desktop-item">{connecter ? 'Profil' : 'Connexion'}</a>
             <ul className="drop-menu">
               {connecter ? (
                 <li><a href="http://localhost:5000/deconnexion">Déconnexion</a></li>
               ) : (
                 <>
-                  <li><a href="/connexion">Connexion</a></li>
-                  <li><a href="/inscriptionpro">Inscription professionnel</a></li>
+                  {/* <li><a href="/connexion">Connexion</a></li> */}
+                  <li><a href="/inscriptionpro">Inscription Professionnel</a></li>
                   <li><a href="/inscriptionpar">Inscription Particulier</a></li>
                 </>
               )}
@@ -76,6 +80,7 @@ function Nav() {
 }
 
 export default Nav
+
 
 
 

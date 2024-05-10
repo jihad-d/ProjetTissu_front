@@ -15,6 +15,7 @@ function RecupDataForm() {
   const [siretTva, setSiretTva] = useState("");
   const [adresse, setAdresse] = useState("");
   const [url, setUrl] = useState("");
+  const [vendeur, setVendeur] = useState(false);
   const [clicBtn, setClicBtn] = useState(0);
   const [showPassword, setShowPassword] = useState(false); // Nouvelle variable d'état pour gérer l'affichage du mot de passe
 
@@ -27,7 +28,6 @@ function RecupDataForm() {
         console.log(response.data);
         const { data } = response;
         setLoading(false)
-        console.log(response.data);
         setNom(response.data.nom)
         setPrenom(response.data.prenom)
         setEmail(response.data.email)
@@ -36,6 +36,7 @@ function RecupDataForm() {
         setSiretTva(response.data.siretTva)
         setAdresse(response.data.adresse)
         setUrl(response.data.url)
+        setVendeur(response.data.vendeur)
         setError('')
       })
       .catch(err => {
@@ -99,6 +100,19 @@ function RecupDataForm() {
           {/* <p>{url}</p><br/> */}
           <input type="text" name="url" defaultValue={url} /><br />
           <br />
+          {vendeur && (
+            <div>
+              <label for="">Statut</label><br />
+              <input type="text" value="Vendeur" disabled />
+            </div>
+          )}
+          {!vendeur && (
+            <div>
+              <label for="">Statut :</label><br />
+              <input type="text" value="Non vendeur" disabled />
+            </div>
+          )}
+          <br />
           <label for="">Mot de passe</label><br />
           <input type={showPassword ? "text" : "password"} name="password" required /><br /> {/* Afficher le mot de passe comme du texte si showPassword est vrai */}
           <button type="button" onClick={toggleShowPassword}>{showPassword ? "Masquer" : "Afficher"}</button> {/* Bouton pour activer/désactiver l'affichage du mot de passe */}
@@ -117,7 +131,9 @@ function RecupDataForm() {
   )
 }
 
-export default RecupDataForm;
+export default RecupDataForm
+
+
 
 
 

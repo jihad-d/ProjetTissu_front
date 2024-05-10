@@ -11,20 +11,24 @@ function InscriptionPro() {
 
     const [password, setPassword] = useState('')
     const [message, setMessage] = useState('')
-
-    function handleChange(e) {
-        setPassword(e.target.value)
-
-        const regExp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&])[A-Za-z\d@$!%*?&]{12,}$/
-
-        const isValidPassword = regExp.test(password)
-
-        if (isValidPassword) {
-            setMessage("Le mot de passe est valide")
-        }
-        else {
-            setMessage("Le mot de passe doit contenir au minimum 12 caractères")
-        }
+    const [vendeur, setVendeur] = useState(false);
+  
+    function handleChange(e){
+      setPassword(e.target.value)
+      
+      const regExp = /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@/$!%_*?&])[A-Za-z\d@/$!%_*?&]{12,}$/
+  
+      const isValidPassword = regExp.test(password)
+  
+      if(isValidPassword) {
+        setMessage("Le mot de passe est valide")
+      }
+      else{
+        setMessage("Le mot de passe doit contenir au minimum 12 caractères")
+      }
+    }
+    function handleVendeurChange(e) {
+        setVendeur(e.target.checked); // Met à jour l'état en fonction de la sélection de l'utilisateur
     }
 
 
@@ -58,9 +62,15 @@ function InscriptionPro() {
                 <label for="">URL</label>
                 <input type="text" name="url" />
                 <br />
+                <label for="">S'inscrire en tant que vendeur:</label>
+                <input type="checkbox" name="vendeur" checked={vendeur} onChange={handleVendeurChange} />
+                <br />
                 <label for="">Mot de passe <span>*</span></label>
-                <input type={affichMdp ? "text" : "password"} name="password" required onChange={handleChange} /><br />
+                {/* <input type={affichMdp ? "text" : "password"} name="password" required onChange={handleChange} /><br />
+                <p>{message}</p> */}
+                <input type={affichMdp ? "text" : "password"} name="password" onChange={handleChange} required/>
                 <p>{message}</p>
+                <br/>
                 <button type="button" onClick={toggleAffichMdp}>{affichMdp ? "Masquer" : "Afficher"}</button>
                 <br />
                 <input type="submit" value="Inscription" />

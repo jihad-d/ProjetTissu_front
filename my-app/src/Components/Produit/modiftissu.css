@@ -37,6 +37,10 @@
     color: black;
   }
 
+  .modifprod input.img{
+    color: rgb(255, 255, 255);
+  }
+
   .modifprod input[type="submit"] {
     width: 100%;
     padding: 10px;

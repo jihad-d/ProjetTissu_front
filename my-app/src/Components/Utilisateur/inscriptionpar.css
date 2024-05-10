@@ -23,6 +23,10 @@ body{
     color: white;
   }
 
+  .inscriptionpar p {
+    color: white;
+  }
+
   .inscriptionpar label, .inscriptionpar input{
     display: block;
     color: white;

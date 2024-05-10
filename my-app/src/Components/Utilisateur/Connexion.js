@@ -39,6 +39,7 @@ function Connexion() {
                 <input type="submit" value="Connexion"/>
                 <br/>
                 <a href="/">Inscription</a>
+                <a href=''>VOUs etes un pro ? c'est ici</a>
                 {/* <a href="#" className='mdp'>Mot de passe oublié</a> */}
                 <br/>
             </form>
