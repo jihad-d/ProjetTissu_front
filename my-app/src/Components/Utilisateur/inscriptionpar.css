@@ -66,7 +66,7 @@ body{
 
   @media only screen and (max-width: 768px) {
     .inscriptionpar {
-      width: 90%; /* Ajustement de la largeur pour les petits écrans */
+      width: 90%; 
       font-size: 17px;
     }
     .inscriptionpar h1 {

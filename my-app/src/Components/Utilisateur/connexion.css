@@ -61,8 +61,8 @@
 
 .img .captcha-img {
   background-color: white; 
-  padding: 10px; /* Marge intérieure pour l'espace autour du captcha */
-  border-radius: 5px; /* Ajoute des coins arrondis */
+  padding: 10px; 
+  border-radius: 5px; 
 }
 
 @media screen and (max-width: 768px) {

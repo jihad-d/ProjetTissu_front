@@ -10,7 +10,7 @@
 }
 
 .containertissu .card {
-    flex: 0 0 calc(24% - 10px); /* Réduire la largeur des cartes */
+    flex: 0 0 calc(24% - 10px); 
     margin-bottom: 20px;
     padding: 10px;
     border: 1px solid #000000;
@@ -36,7 +36,7 @@
 }
 
 .containertissu button:hover {
-    background-color: #58262f; /* Assombrir légèrement au survol */
+    background-color: #58262f; 
 }
 
 

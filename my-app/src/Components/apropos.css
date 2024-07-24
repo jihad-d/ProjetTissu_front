@@ -7,13 +7,13 @@ h1{
     background-color: #57383B;
     border: 5px solid #E6DAD1;
     display: flex;
-    flex-direction: column; /* Disposer les éléments en colonne */
-    justify-content: center; /* Centre horizontalement */
-    align-items: center; /* Centre verticalement */
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
     background-color: #57383B;
     margin-top: 20px;
     height: 400px;
-    margin: 0 auto; /* Centre horizontalement */
+    margin: 0 auto; 
     text-align: center;
     padding-left: 100px;
     padding-right: 100px;
@@ -29,7 +29,7 @@ h1{
     }
     .text{
         height: 70%;
-        padding: 10px 30px; /* 10px en haut et en bas, 30px à gauche et à droite */
+        padding: 10px 30px; 
         margin-top: -30px;
     }
   

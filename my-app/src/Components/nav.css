@@ -152,7 +152,7 @@ nav input{
 }
 
 .btn.menu-btn {
-  display: none; /* Cachez le bouton de menu par défaut */
+  display: none; 
 }
 
 @media screen and (max-width: 768px) {
@@ -160,7 +160,7 @@ nav input{
     font-size: 5px;
   }
   .nav-links {
-    display: none; /* Cachez les liens par défaut sur les petits écrans */
+    display: none; 
   }
 
   .btn.menu-btn {
